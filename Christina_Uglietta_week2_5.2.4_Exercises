@@ -1,0 +1,17 @@
+filter(flights, arr_delay > 120, dep_delay > 120)
+
+filter(flights, dest == "IAH" | dest == "HOU")
+
+filter(flights, carrier == "UA"| carrier == "DL"| carrier == "AA")
+
+filter(flights, month == 7 | month == 8 | month == 9)filter(flights, month == 7 | month == 8 | month == 9)
+
+filter(flights, arr_delay > 120, dep_delay == 0)
+
+filter(flights, dep_delay > 60, arr_delay < 30)
+
+filter(flights, dep_time > 0000 & dep_time < 0600)
+
+filter(flights,between(dep_time,0000,0600))
+
+filter(flights, is.na(dep_time))
